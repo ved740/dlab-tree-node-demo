@@ -1,5 +1,4 @@
 import React from "react";
-import OperationItem from "./OperationItem";
 
 class OperationsList extends React.Component {
 
@@ -87,20 +86,6 @@ class OperationsList extends React.Component {
     render() {
         return (
             <div className="operations-list">
-                <div className="back">&lt; Back</div>
-                <div className="search">
-                    <input 
-                        type="search"
-                        className="round" 
-                        placeholder="Search" 
-                        value={this.state.searchText}
-                        onChange={this.handleSearch}
-                    />
-                    <div className="corner">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    </div>
-                </div>
-                {this.state.operationItems.map(oItem => <OperationItem data={oItem} />)}
             </div>
         );
     }

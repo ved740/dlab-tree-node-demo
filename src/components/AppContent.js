@@ -1,7 +1,7 @@
 import React from "react";
 import InfoHeader from "./InfoHeader";
 import OperationsList from "./OperationsList";
-import DataTable from "./DataTable";
+import NodeTree from "./NodeTree";
  
 const AppContent = () => {
   return (
@@ -9,9 +9,7 @@ const AppContent = () => {
       <InfoHeader />
       <div className="records-operations-wrapper">
         <OperationsList />
-        <div className="lab-data-area">
-          <DataTable />
-        </div>
+        <NodeTree />
       </div>
     </div>
   );
